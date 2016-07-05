@@ -9,7 +9,8 @@ sudo apt-get install postgresql postgresql-contrib
 
 Create database
 ```sh
-sudo su postgres 
+sudo su postgres
+psql
 create user vazgen;
 create database test owner vazgen;
 ALTER ROLE vazgen with PASSWORD ‘123’;
